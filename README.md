@@ -80,18 +80,20 @@ streamlit run app.py
 
 Opens in your browser at <http://localhost:8501>.
 
-## Deploy to Streamlit Community Cloud
+## Deployment
 
-This repo is ready to deploy on [share.streamlit.io](https://share.streamlit.io):
+The app is deployed on Streamlit Community Cloud:
 
-1. Sign in with GitHub.
-2. Click **New app** → pick `NishanthSundaran/AQI_prediction`.
-3. Branch: `main`, main file path: `app.py`, Python version: `3.11`.
-4. Click **Deploy**. First boot takes ~2 minutes (pip install + model load).
+**<https://aqipredictionnishanth.streamlit.app/>**
 
-Pinned dependencies in `requirements.txt` keep the pickled SARIMAX
-models compatible with the cloud runtime; the theme in
-`.streamlit/config.toml` is applied automatically.
+The repo is configured end-to-end for this deployment — pinned
+dependencies in `requirements.txt` keep the pickled SARIMAX models
+compatible with the cloud runtime, and the theme in
+`.streamlit/config.toml` is applied automatically on first boot.
+
+To redeploy your own fork, sign in at [share.streamlit.io](https://share.streamlit.io),
+pick the repo, set branch `main` and main file `app.py`, and click
+**Deploy**. First boot takes ~2 minutes.
 
 ## Repo layout
 
