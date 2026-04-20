@@ -1,6 +1,8 @@
 # AQI Prediction & Forecasting — Chennai
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://aqipredictionnishanth.streamlit.app/)
+
+**Live demo:** <https://aqipredictionnishanth.streamlit.app/>
 
 A Streamlit web app that **forecasts monthly pollutant concentrations**
 for Chennai using seven independent SARIMA models and converts them
