@@ -1,5 +1,7 @@
 # AQI Prediction & Forecasting — Chennai
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/)
+
 A Streamlit web app that **forecasts monthly pollutant concentrations**
 for Chennai using seven independent SARIMA models and converts them
 into an overall Air Quality Index via the **Indian CPCB sub-index
@@ -75,6 +77,19 @@ streamlit run app.py
 ```
 
 Opens in your browser at <http://localhost:8501>.
+
+## Deploy to Streamlit Community Cloud
+
+This repo is ready to deploy on [share.streamlit.io](https://share.streamlit.io):
+
+1. Sign in with GitHub.
+2. Click **New app** → pick `NishanthSundaran/AQI_prediction`.
+3. Branch: `main`, main file path: `app.py`, Python version: `3.11`.
+4. Click **Deploy**. First boot takes ~2 minutes (pip install + model load).
+
+Pinned dependencies in `requirements.txt` keep the pickled SARIMAX
+models compatible with the cloud runtime; the theme in
+`.streamlit/config.toml` is applied automatically.
 
 ## Repo layout
 
